@@ -40,7 +40,7 @@ h2 {
 
 h3 {
   text-align: center;
-  }
+}
 
 p {
   text-align: center;
@@ -79,4 +79,16 @@ p {
 
 .member-card:hover::before {
   opacity: 1;
+}
+
+.service-card {
+  padding: 1rem;
+  background-color: #ec1f10;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  color: white;
 }
