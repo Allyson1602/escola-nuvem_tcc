@@ -2,6 +2,8 @@
   border: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -11,8 +13,6 @@ body {
 h1 {
   margin-top: 30px;
   text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 50px;
 }
 
@@ -23,7 +23,6 @@ h1 {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-items: center;
 }
-
 
 .img {
   margin-left: 2%;
@@ -42,13 +41,37 @@ p {
   text-align: center;
 }
 
-img
 .member-card {
   display: inline-block;
+  position: relative;
+  transition: ease-in-out 0.1s;
+}
+
+.member-card:hover {
+  transform: scale(1.01);
+  z-index: 2;
 }
 
 .member-card img {
   border-radius: 100%;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.616);
+}
 
+/*tooltip*/
+.member-card::before {
+  content: attr(title);
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fbd30d;
+  color: #000;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #0000009d;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.member-card:hover::before {
+  opacity: 1;
 }
