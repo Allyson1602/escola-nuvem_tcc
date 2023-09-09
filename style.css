@@ -18,6 +18,15 @@
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--subtitle-color);
+}
+
 body {
   background-color: var(--background-color);
   color: var(--text-color);
