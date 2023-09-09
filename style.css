@@ -1,3 +1,14 @@
+:root {
+  --background-color: #df960fb6;
+  --border-color: #ffffff4d;
+  --title-color: #ffffff80;
+  --image-bg-color: #ec1f10;
+  --box-shadow-color: #0000009d;
+  --tooltip-bg-color: #fbd30d;
+  --tooltip-text-color: #000;
+  --service-bg-color: #ec1f10;
+}
+
 * {
   border: 0;
   padding: 0;
@@ -7,7 +18,7 @@
 }
 
 body {
-  background-color: #df960fb6;
+  background-color: var(--background-color);
 }
 
 h1 {
@@ -25,22 +36,22 @@ h1 {
 }
 
 #section-curriculos {
-  border: 3px solid rgba(255,255,255,0.3);
+  border: 3px solid var(--border-color);
   border-radius: 5px;
   padding: 20px;
 }
 
 #title-curriculos {
-  color: rgba(255,255,255,0.5);
+  color: var(--title-color);
 }
 
 .img {
   margin-left: 2%;
   padding: 50px;
-  background-color: #ec1f10;
+  background-color: var(--image-bg-color);
   display: inline-block;
   border-radius: 10px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.616);
+  box-shadow: 2px 2px 10px var(--box-shadow-color);
 }
 
 h2 {
@@ -69,20 +80,20 @@ p {
 
 .member-card img {
   border-radius: 100%;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.616);
+  box-shadow: 2px 2px 10px var(--box-shadow-color);
 }
 
-/*tooltip*/
+/* Tooltip */
 .member-card::before {
   content: attr(title);
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #fbd30d;
-  color: #000;
+  background-color: var(--tooltip-bg-color);
+  color: var(--tooltip-text-color);
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 2px 2px 10px #0000009d;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.616);
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -93,7 +104,7 @@ p {
 
 .service-card {
   padding: 1rem;
-  background-color: #ec1f10;
+  background-color: var(--service-bg-color);
   border-radius: 10px;
   margin-bottom: 1rem;
 }
