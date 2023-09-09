@@ -196,7 +196,7 @@
 
       <h3><strong>Total:</strong> $209,04</h3>
 
-      <article class="service-card s3">
+      <article class="service-card s3 show">
         <h3>S3 Standard</h3>
         <p>
           <strong>
@@ -265,11 +265,9 @@
     <script>
       const services = document.getElementsByClassName('btn-service');
 
-      let hasActive = false;
-
       for (let i = 0; i < services.length; i++) {
         services[i].addEventListener('click', function () {
-          hasActive ? removeFromCurrent('show') : (hasActive = true);
+          removeFromCurrent('show');
 
           const title = this.getAttribute('data-name');
           const modal = document.getElementsByClassName(title)[0];
