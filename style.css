@@ -114,7 +114,7 @@ p {
 }
 
 .services-title {
-  text-align: left;
+  text-align: center;
 }
 
 .services-nav ul {
@@ -164,6 +164,7 @@ li {
 .s3 {
   background-color: #63a73b;
 }
+
 .s3 .location {
   color: #225205;
 }
@@ -171,6 +172,7 @@ li {
 .cloudfront {
   background-color: #925bf0;
 }
+
 .cloudfront .location {
   color: #3f089d;
 }
@@ -178,6 +180,7 @@ li {
 .cloudwatch {
   background-color: #f24280;
 }
+
 .cloudwatch .location {
   color: #770e33;
 }
